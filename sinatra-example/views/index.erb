@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>letsauth example RP (sinatra app)</title>
+        
+    </head>
+    <body>
+        <main>
+            <p>A minimal html page with a login button.</p>
+
+            <% if confirmed_mail %>
+                <p>You are logged in as <%= confirmed_mail %></p>
+            <% end %>
+            
+            <section id="letsauth"></section>
+        </main>
+        <script src="http://localhost:9292/client.js"></script>
+    </body>
+</html>
